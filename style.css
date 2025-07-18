@@ -101,3 +101,40 @@ body {
     box-shadow: 0 0 10px rgba(0, 255, 255, 0.945);
   }
 }
+@media (max-width: 600px) {
+  .clock {
+    display: flex;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgb(3, 189, 189);
+    color: #fff;
+    animation: glow 2s ease-in-out infinite;
+    position: relative;
+  }
+  #pm {
+  font-size: 10px;
+  color: #ffffff;
+  position: absolute;
+  top: 48px;
+  right: 10px;
+  font-weight: bold;
+}
+.time span {
+  position: absolute;
+  top: 58px;
+  right: 138px;
+  font-size: 46px;
+}
+.days div {
+  font-size: 12px;
+  color: #807e7e;
+  padding: 3px 0;
+}
+.days .active {
+  color: #00f2ff;
+  font-weight: bold;
+  text-shadow: 0px 0px 15px rgb(44 184 235);
+  font-size: 20px;
+}
+
+}
